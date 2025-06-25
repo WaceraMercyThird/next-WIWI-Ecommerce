@@ -17,7 +17,7 @@ const slides = [
         id: 2,
         title: "winter Sale Collection",
         description: "Sale! Up to 50% Off!",
-        img: "https://images.pexels.com/photos/26761341/pexels-photo-26761341.jpeg",
+        img: "https://images.pexels.com/photos/21897132/pexels-photo-21897132.jpeg",
         url: "/",
         bg: "bg-gradient-to-r from-yellow-50 to-pink-50"
     },
@@ -37,7 +37,9 @@ const Slider = () => {
 
     return(
         <div className="h-[calc(100vh-80px)] overflow-hidden">
-            <div className="w-max h-full flex transition-all ease-in-out duration-1000">
+            <div className="w-max h-full flex transition-all ease-in-out duration-1000"
+            style={{ transform: `translateX(-${Current * 100}vw)` }}
+            >
                 {slides.map(slide => (
                 <div className={`${slide.bg} w-screen h-full flex flex-col gap-16 xl:flex-row`} key={slide.id}>
                     {/* TEXT CONTAINER */}
@@ -53,11 +55,26 @@ const Slider = () => {
                     <Image src={slide.img} alt="image" fill sizes="100%" className="object-cover"/>
                     </div>
                 </div>
-                ))
-                }
+                ))}
             </div>
+            <div className="absolute m-auto left-1/2 bottom-8 flex gap-4">
+            {slides.map((slide, index) => (
+                <div
+                key={slide.id}
+                onClick={() => setCurrent(index)}
+                className={`w-3 h-3 rounded-full ring-1 ring-gray-600 cursor-pointer flex items-center justify-center ${
+                    Current === index ? "scale-150" : ""
+                }`}
+                >
+                {Current === index && (
+                    <div className="w-[6px] h-[6px] bg-gray-600 rounded-full"></div>
+                )}
+                </div>
+            ))}
+            </div>
+
+
         </div>
-    )
-}
+    )}
 
 export default Slider

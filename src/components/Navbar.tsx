@@ -21,10 +21,10 @@ const Navbar = () => {
                 <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
                 <Link href="/" className="flex items-center gap-8">
                 <Image src="/logo.png" alt="Logo" width={24} height={24}/>
-                <div className="text-2xl tracking-wide">MAWA</div>
+                <div className="text-2xl tracking-wide">WIWI</div>
                 </Link> 
                 <div className="hidden xl:flex gap-4">
-                <Link href="/">HomePage</Link>  
+                    <Link href="/">Home</Link>  
                     <Link href="/">Shop</Link>
                     <Link href="/">Deals</Link>
                     <Link href="/">About</Link>
