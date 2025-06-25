@@ -17,7 +17,7 @@ const slides = [
         id: 2,
         title: "winter Sale Collection",
         description: "Sale! Up to 50% Off!",
-        img: "https://images.pexels.com/photos/21897132/pexels-photo-21897132.jpeg",
+        img: "https://images.pexels.com/photos/19248181/pexels-photo-19248181.jpeg",
         url: "/",
         bg: "bg-gradient-to-r from-yellow-50 to-pink-50"
     },
