@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const slides = [
     {
@@ -15,7 +15,7 @@ const slides = [
     },
     {
         id: 2,
-        title: "winter Sale Collection",
+        title: "Winter Sale Collection",
         description: "Sale! Up to 50% Off!",
         img: "https://images.pexels.com/photos/19248181/pexels-photo-19248181.jpeg",
         url: "/",
@@ -33,7 +33,15 @@ const slides = [
 
 const Slider = () => {
 
-    const [Current, setCurrent] = useState(0)
+    const [Current, setCurrent] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent(prev=>(prev === slides.length-1 ? 0 : prev + 1))
+          }, 3000);
+    
+      return () => clearInterval(interval)
+    }, [])
+    
 
     return(
         <div className="h-[calc(100vh-80px)] overflow-hidden">
