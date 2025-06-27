@@ -75,8 +75,8 @@ const Footer = () => {
             </div>
             {/* BOTTOM */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
-                <div>c 2024 WiWi Shop</div>
-                <div className="flex flex-col gap-8 md:flex-row ">
+            <div>&copy; 2024 WiWi Shop</div>
+            <div className="flex flex-col gap-8 md:flex-row ">
                 <div>
                         <span className="text-gray-500 mr-4">Language</span>
                         <span className="font-medium">Kenya | English</span>
