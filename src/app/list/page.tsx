@@ -9,7 +9,7 @@ const ListPage = () => {
                 <div className="w-2/3 flex flex-col items-center justify-center gap-8">
                 <h1 className="text-4xl font-semibold leading-[48px] text-gray-700">
                     Grab up to 50% off on <br/> Selected Products</h1>
-                <button className="rounded-3xl bg-lama text-white w-max py-3 px-5 text-sm hover:bg-white hover:text-lama hover:ring-1 hover:ring-lama">Buy Now</button>
+                <button className="rounded-3xl bg-wiw text-white w-max py-3 px-5 text-sm hover:bg-white hover:text-wiwi hover:ring-1 hover:ring-wiwi">Buy Now</button>
                 </div>
                 <div className="relative w-1/2">
                     <Image src="/woman.png" alt="" fill className="object-contain"/>

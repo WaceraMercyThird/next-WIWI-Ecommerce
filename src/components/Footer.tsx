@@ -61,7 +61,7 @@ const Footer = () => {
                 <p>Be the first to get the lastest news about trends, promotion and more!</p>
                 <div className="flex">
                 <input type="text" placeholder="Email Address" className="p-4 w-3/4"/>
-                <button className=" w-1/4 bg-lama text-white">JOIN</button>
+                <button className=" w-1/4 bg-wiw text-white">JOIN</button>
                 </div>
                 <span className="font-semibold">Secure Payment</span>
                 <div className="flex justify-between">
